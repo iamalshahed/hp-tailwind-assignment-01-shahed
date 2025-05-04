@@ -20,7 +20,14 @@
 
     /* color */
     --color-primary:#F44335;
+    --color-primary_hover:#ff7166;
     --color-secondary: #00FF84;
+}
+
+@layer utilities{
+    .nav_item{
+        @apply text-emerald-950 text-base font-normal leading-normal transition-colors duration-300 hover:text-primary;
+    }
 }
 
 
