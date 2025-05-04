@@ -8,6 +8,8 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 /* customization */
 
@@ -26,7 +28,7 @@
 
 @layer utilities{
     .nav_item{
-        @apply text-emerald-950 text-base font-normal leading-normal transition-colors duration-300 hover:text-primary;
+        @apply text-emerald-950 dark:text-white text-base font-normal leading-normal transition-colors duration-300 hover:text-primary dark:hover:text-secondary;
     }
 
     /* hero review */
@@ -35,7 +37,7 @@
     }
 
     .hero_r_text{
-        @apply text-slate-800 text-lg font-normal;
+        @apply text-slate-800 dark:text-white text-lg font-normal;
     }
 }
 
