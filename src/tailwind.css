@@ -28,6 +28,15 @@
     .nav_item{
         @apply text-emerald-950 text-base font-normal leading-normal transition-colors duration-300 hover:text-primary;
     }
+
+    /* hero review */
+    .hero_review{
+        @apply text-emerald-400 text-2xl font-bold;
+    }
+
+    .hero_r_text{
+        @apply text-slate-800 text-lg font-normal;
+    }
 }
 
 
